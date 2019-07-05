@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "noImplicitAny": true,
+    "target": "es6",
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "es7"
+    ],
+    "removeComments": false,
+		"preserveConstEnums": true,
+		"sourceMap": false,
+		"outDir": "../out"
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "es",
+    "test",
+  ]
+}

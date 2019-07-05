@@ -1,0 +1,52 @@
+{
+  "name": "simple-doc-editor",
+  "version": "0.0.1-rc.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config ./build/webpack.dev.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangmengHB/simple-doc-editor.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangmengHB/simple-doc-editor/issues"
+  },
+  "homepage": "https://github.com/wangmengHB/simple-doc-editor#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-typescript": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "@types/jest": "^23.3.13",
+    "@types/keytar": "^4.0.1",
+    "@types/minimist": "^1.2.0",
+    "@types/mocha": "2.2.39",
+    "@types/node": "^10.12.12",
+    "@types/semver": "^5.5.0",
+    "@types/sinon": "^1.16.36",
+    "@types/webpack": "^4.4.10",
+    "@types/winreg": "^1.2.30",
+    "babel-jest": "^24.0.0",
+    "babel-loader": "^7.1.5",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "mocha": "^2.2.5",
+    "mocha-junit-reporter": "^1.17.0",
+    "style-loader": "^0.23.1",
+    "ts-jest": "^23.10.5",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.2",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  }
+}
