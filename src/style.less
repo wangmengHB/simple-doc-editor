@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix::before{
+  content: '';
+  display: table;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.clearfix() {
+  zoom: 1;
+  &::before{
+    content: '';
+    display: table;
+  }
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@-toolbox-height: 20px;
+
+
+.doc-editor {
+  width: 800px;
+  height: 600px;
+  .toolbox {
+    width: 100%;
+    height: 20px;
+    border: solid 1px black;
+    border-bottom: none;
+  }
+
+
+  .doc-container {
+    position: relative;
+    border: solid 1px black;
+    width: 100%;
+    height: ~"calc(100% - @{-toolbox-height})";
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.2);
+
+    .doc {
+      width: 60%;
+      height: 100%;
+      padding: 10px;
+      overflow: auto;
+      margin: 0 30% 0 10%;
+      border: solid 1px black;
+      background: white;
+    }
+
+    .comment-box {
+      position: absolute;
+      z-index: 1;
+      width: 200px;
+      top: 0;
+      right: 10px;
+      border: 2px red dashed;
+    }
+
+    .comment-arrow {
+      position: absolute;
+      z-index: 2;
+    }
+
+    
+
+    
+  }
+
+}
